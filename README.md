@@ -6,41 +6,47 @@
 * Несколько вариантов файлов настроек
 * Несколько способов очистки следов работы 
 * Метод резервного копирования
-* и т.д. 
+* Загрузчик скриптов по умолчанию - user_chrome_files  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(userChromeJS удален. Причина:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. наличие двух загрузчиков плохо сказывается на производительности;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. для ucf, уже, скриптов намного больше и они более совершенны;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. в отличии от userChromeJS, <a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/stylesff/user_chrome_files" target="_blank">UCF</a>  активно <a href="https://forum.mozilla-russia.org/viewforum.php?id=38" target="_blank">поддерживается автором</a> и <a href="https://forum.mozilla-russia.org/viewforum.php?id=34" target="_blank">не только</a>.  
+* и т.д.
   
   
 ## Общее описание:  
   
 * В папке будущего профиля присутствует пара заглушек и user.js  
-	· Отключающий телеметрию  
-	· Отключающий автообновления  
-	· Отключающий отчеты  
-	· Отключающий DRM  
-	· Отключающий WebRTC  
-	· Отключающий Service workers  
-	· Отключающий браузерные проверки  
-	· Отключающий сомооткрываемые страницы  
-	· Отключающий пункты меню Pocket  
-	· Отключающий пункты меню аккаунта Firefox  
-	· Включающий userChrome/userContent
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий телеметрию  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновления  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий отчеты  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий DRM  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий WebRTC  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий Service workers  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий браузерные проверки  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий сомооткрываемые страницы  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий пункты меню Pocket  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий пункты меню аккаунта Firefox  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включающий userChrome/userContent
   
 * В папке ядра присутствует файл настроек  
-	· Включающий возможность установки неподписанных расширений  
-	· Включающий возможность установки нативных скриптов  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включающий возможность установки неподписанных расширений  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включающий возможность установки скриптов и стилей user_chrome_files 
 	  
 * В папке ядра присутствует файл политик  
-	· Отключающий телеметрию  
-	· Отключающий CaptivePortal  
-	· Отключающий сервисы Mozilla  
-	· Отключающий автообновление браузера  
-	· Отключающий автообновление расширений  
-	· Отключающий автообновление поисковых систем  
-	· Отключающий автообновление системных расширений  
-	· Отключающий проверку браузера по умолчанию  
-	· Отключающий возможность установки обоев рабочего стола  
-	· Отключающий страницы первого запуска и PostUpdatePage  
-	· Отключающий создание для нового профиля папок закладок по умолчанию  
-	· Отключающий страницу политики конфиденциальности при первом запуске  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий телеметрию  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий CaptivePortal  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий сервисы Mozilla  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление браузера  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление расширений  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий проверку браузера по умолчанию  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление поисковых систем  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление системных расширений  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий проверку браузера по умолчанию  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий возможность установки обоев рабочего стола  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий страницы первого запуска и PostUpdatePage  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий создание для нового профиля папок закладок по умолчанию  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий страницу политики конфиденциальности при первом запуске  
   
 * Временные файлы пишутся в %TEMP%  
 * Добавлен скрипт очистки ядра, профиля и временных файлов (ручной запуск)  
@@ -178,14 +184,14 @@
 <a href="https://www.userchrome.org/megabar-styling-firefox-address-bar.html" target="_blank">Megabar – Configuring and Styling</a>  
 генератор стилей для мегабара (адресной строки)  
 <a href="https://github.com/stonecrusher/simpleMenuWizard" target="_blank">simpleMenuWizard</a>  
-стили userChrome/userContent для настройки контекстных меню,  
+стили userChrome/userContent для редактирования всех контекстных меню,  
 от автора старого расширения Simple Menu Wizard  
 <a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/webextensions/experiments" target="_blank">add_toolbar_buttons</a>  
 расширение добавляющее кучу полезных кнопок для панелей,  
 от автора user_chrome_files  
   
 <a href="https://github.com/Aris-t2/CustomCSSforFx" target="_blank">Classic CSS tweaks for Firefox Quantum</a>  
-стили userChrome/userContent, от автора ClassicThemeRestorer  
+стили userChrome/userContent, от автора старого ClassicThemeRestorer  
 <a href="https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme" target="_blank">Quantum-Nox-Firefox-Dark-Full-Theme</a>  
 стили userChrome/userContent полной темной темы для Quantum,  
 включая стили для некоторых расширений  
@@ -200,10 +206,10 @@
   
 ## Used developments & credits:  
   
-  <a href="https://www.mozilla.org/ru/" target="_blank">mozilla</a>  
-  <a href="https://forum.mozilla-russia.org/" target="_blank">mozilla-russia.org</a>  
-  <a href="https://sourceforge.net/projects/libportable/" target="_blank">libportable</a>   
-  <a href="https://github.com/arkenfox/user.js" target="_blank">arkenfox</a>  
-  <a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io" target="_blank">VitaliyVstyle</a>  
-  <a href="https://www.7-zip.org/" target="_blank">7-zip</a>  
-  <a href="https://www.sqlite.org/index.html" target="_blank">sqlite</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mozilla.org/ru/" target="_blank">mozilla</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://forum.mozilla-russia.org/" target="_blank">mozilla-russia.org</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://sourceforge.net/projects/libportable/" target="_blank">libportable</a>   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/arkenfox/user.js" target="_blank">arkenfox</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io" target="_blank">VitaliyVstyle</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.7-zip.org/" target="_blank">7-zip</a>  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.sqlite.org/index.html" target="_blank">sqlite</a>  
