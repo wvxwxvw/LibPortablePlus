@@ -16,7 +16,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий телеметрию  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновления  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий отчеты  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий DRM  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий GMP, CDM, DRM  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий WebRTC  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий Service workers  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий браузерные проверки  
@@ -33,6 +33,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий телеметрию  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий CaptivePortal  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий сервисы Mozilla  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий GMP, CDM  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление браузера  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление расширений  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий проверку браузера по умолчанию  
@@ -64,6 +65,14 @@
     _include.txt
         Список резервного копирования, можно редактировать
             В нем добавлен пример выборки из подпапок
+    FF91esrCleaner.exe
+        Очищает мусор профиля, ядра, временную папку и некоторые другие места.
+        Папку bookmarkbackups тоже удаляет, она просто не нужна при постоянных
+        полных бэкапах профиля. При запуске завершает все процессы Firefox.
+        Исходники в maintenance, можете перекомпилировать по своему в Aut2Exe,
+        который входит в комплект AutoIt.
+    Firefox 91esr RUN.lnk
+        Ярлык для запуска firefox.exe из папки core
     VACUUM+BACKUP.bat
         Жмет все .sqlite в корне профиля и в storage
         Может удалять базы рекламорезок и историю отдельных расширений
@@ -71,12 +80,7 @@
         Создает архив по списку из _include.txt
             Пароль на архив 12345, меняется в самом батнике
             Требует наличия рядом папки .\maintenance\7z
-    FF91esrCleaner.exe
-        Очищает мусор профиля, ядра, временную папку и некоторые другие места.
-        Папку bookmarkbackups тоже удаляет, она просто не нужна при постоянных
-        полных бэкапах профиля. При запуске завершает все процессы Firefox.
-        Исходники в maintenance, можете перекомпилировать по своему в Aut2Exe,
-        который входит в комплект AutoIt.
+            и папки .\maintenance\SQLite
 ```
   
   
@@ -98,7 +102,7 @@
   
 ```csharp
     1. Для создания нового профиля
-        • Запускаем core/firefox.exe или ярлык "Firefox 91esr RUN"
+        • Запускаем core/firefox.exe или ярлык "Firefox 91esr RUN.lnk"
         • Пользуемся
       
     2. Для использования своего старого профиля
@@ -106,7 +110,7 @@
             · От замены отказываемся, ошибки игнорируем, жмем "Пропустить"
             · Предварительно можно почитать ниже "Перенос старого профиля"
         • Запускаем FF91esrCleaner.exe, ждем несколько секунд
-        • Запускаем core/firefox.exe или ярлык "Firefox 91esr RUN"
+        • Запускаем core/firefox.exe или ярлык "Firefox 91esr RUN.lnk"
         • Пользуемся
 ```
   
@@ -160,10 +164,7 @@
     После обновления, после работы на чужой машине и просто для
     периодической очистки, можно воспользоваться FF91esrCleaner.exe,
     он чистит папку ядра, профиля, ProgramData, LocalLow, %TEMP%.
-    Вне папки сборки и TEMP-а, мусорные папки создаются только
-    в ProgramData и LocalLow, остальные точки очистки оставлены
-    для очистки мусора от других сборок и установочной версии.
-    Закладки, пароли, куки/хранилище сайтов/сессии и историю форм
+    Закладки, пароли, куки/хранилище сайтов/сессий и историю форм
     FF91esrCleaner.exe не очищает.
 ```
 
@@ -183,21 +184,24 @@ Firefox, от автора старого расширения Simple Menu Wizar
 помимо прочего ликвидирует все недостатки Proton и других "улучшений" Firefox,  
 типа мегабара и невменяемого размера менюшек, легко редактируется  
   
-<a href="https://www.userchrome.org/megabar-styling-firefox-address-bar.html" target="_blank">Megabar – Configuring and Styling</a>  
-генератор стилей для мегабара (адресной строки)  
+<a href="https://github.com/black7375/Firefox-UI-Fix" target="_blank">Firefox-UI-Fix</a>  
+несколько комплектов стилей для ликвидации последствий Proton  
 <a href="https://github.com/Aris-t2/CustomCSSforFx" target="_blank">Classic CSS tweaks for Firefox Quantum</a>  
 стили userChrome/userContent, от автора старого ClassicThemeRestorer  
 <a href="https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme" target="_blank">Quantum-Nox-Firefox-Dark-Full-Theme</a>  
 стили userChrome/userContent полной темной темы для Quantum,  
 включая стили для некоторых расширений  
+<a href="https://www.userchrome.org/megabar-styling-firefox-address-bar.html" target="_blank">Megabar – Configuring and Styling</a>  
+генератор стилей для мегабара (адресной строки)  
+  
 <a href="https://github.com/arkenfox/user.js" target="_blank">arkenfox user.js</a>  
 справочник по параметрам для составления собственного user.js,  
 для разных версий Firefox (приватность и безапасность)  
 <a href="https://addons.mozilla.org/ru/firefox/addon/enterprise-policy-generator/" target="_blank">Enterprise Policy Generator</a>  
 генератор политик для Firefox  
+  
 <a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/stylesff/user_chrome_files" target="_blank">user_chrome_files</a>  
-дополнительные панели + др. функции и скрипты.  
-Автор <a href="https://forum.mozilla-russia.org/viewforum.php?id=38" target="_blank">здесь</a>  
+дополнительные панели + др. функции и скрипты. Автор <a href="https://forum.mozilla-russia.org/viewforum.php?id=38" target="_blank">здесь</a>  
   
 ## Used developments & credits:  
   
