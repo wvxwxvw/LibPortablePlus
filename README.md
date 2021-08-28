@@ -74,7 +74,7 @@
     Firefox 91esr RUN.lnk
         Ярлык для запуска firefox.exe из папки core
     VACUUM+BACKUP.bat
-        Жмет все .sqlite в корне профиля и часть в storage
+        Жмет все .sqlite в профиле и его подпапках
         Может удалять базы рекламорезок и историю отдельных расширений
             Описание в нем самом и в maintenance\sources\bat
         Создает архив по списку из _include.txt
