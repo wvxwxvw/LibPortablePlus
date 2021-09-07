@@ -1,5 +1,7 @@
 # LibPortablePlus
   
+<a href="https://github.com/wvxwxvw/LibPortablePlus/raw/main/Firefox_ESR.91.x.x.x32-64.(21.09.07).7z" target="_blank">**Скачать Firefox_ESR.91.x.x.x32-64 LibPortablePlus**</a><hr> 
+  
 ## Портативная версия Firefox ESR 91.x (32-64)  
   
 * Условная портативность обеспечивается portable*.dll  
