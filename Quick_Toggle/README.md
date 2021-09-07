@@ -23,7 +23,7 @@
   
 ![3](https://user-images.githubusercontent.com/13194155/132410047-0ee3f9b2-6324-40cb-b260-76093999bb7b.png) ![4](https://user-images.githubusercontent.com/13194155/132410066-e6b4c126-7923-4d33-a7c5-1ba6ecb6dd55.png)
   
-Когда все пункты позеленеют перезапускаем браузер и получаем то что я задумывал.  
+Когда все пункты позеленеют, перезапускаем браузер и получаем то что я задумывал.  
   
 ![5](https://user-images.githubusercontent.com/13194155/132410175-e5a0c5af-97f4-49bf-906c-86312d3e4ee1.png)
 ![6](https://user-images.githubusercontent.com/13194155/132410188-a974e3c8-5cfb-4bec-b919-578e2644cb3f.png)
