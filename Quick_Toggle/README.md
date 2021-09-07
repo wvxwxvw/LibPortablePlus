@@ -29,5 +29,5 @@
 ![6](https://user-images.githubusercontent.com/13194155/132410188-a974e3c8-5cfb-4bec-b919-578e2644cb3f.png)
   
 Если что-то не устраивает, можете самостоятельно отредактировать файл  
-``.\profile\chrome\user_chrome_files\custom_scripts\custom_js\QuickToggleAboutConfig_Damby_ucf.js``
+``.\profile\chrome\user_chrome_files\custom_scripts\custom_js\QuickToggleAboutConfig_Damby_ucf.js``  
 Все необходимые инструкции в нем есть.
