@@ -1,6 +1,7 @@
 # LibPortablePlus
   
-<a href="https://github.com/wvxwxvw/LibPortablePlus/raw/main/Firefox_ESR.91.x.x.x32-64.(21.10.02).7z" target="_blank">**Скачать Firefox_ESR.91.x.x.x32-64 LibPortablePlus от 21.10.02**</a><hr> 
+[Скачать сборку ESR 91 LPP от 21.10.02](https://github.com/wvxwxvw/LibPortablePlus/raw/main/Firefox_ESR.91.x.x.x32-64.(21.10.02).7z)  
+[Посмотреть перднастроенные профили](https://github.com/wvxwxvw/LibPortablePlus/tree/main/Profiles_91_ESR_LPP)
   
 ## Портативная версия Firefox ESR 91.x (32-64)  
   
@@ -8,7 +9,7 @@
 * Несколько вариантов файлов настроек  
 * Несколько способов очистки следов работы  
 * Метод резервного копирования  
-* Встроен загрузчик скриптов - <a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/stylesff/user_chrome_files" target="_blank">user_chrome_files</a>  
+* Встроен загрузчик скриптов - [user_chrome_files](https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/stylesff/user_chrome_files)    
 * и т.д.  
   
   
