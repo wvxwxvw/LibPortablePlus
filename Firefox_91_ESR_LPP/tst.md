@@ -1,6 +1,0 @@
-![2021 10 24_160831](https://user-images.githubusercontent.com/13194155/138607201-ff327e70-b7ff-408c-833a-7ae18e2256eb.png)
-![2021 10 24_161913](https://user-images.githubusercontent.com/13194155/138607202-51f64be8-ce0f-4da0-9a68-26a81f896a61.png)
-![2021 10 24_162125](https://user-images.githubusercontent.com/13194155/138607203-ec4614e6-c4a4-47da-8e68-d28a4af8723d.png)
-![2021 10 24_162126](https://user-images.githubusercontent.com/13194155/138607204-22d6cb40-8eb8-4b1c-924f-63ccb31e20bd.png)
-![2021 10 11_114838](https://user-images.githubusercontent.com/13194155/138607208-75385235-045f-400b-9cce-f379f6deef0e.png)
-![2021 10 11_114850](https://user-images.githubusercontent.com/13194155/138607210-d6e24cc1-f73e-4e31-b75c-9bf7664bb807.png)
