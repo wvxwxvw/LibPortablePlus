@@ -1,7 +1,7 @@
 # LibPortablePlus
   
 [Скачать сборку ESR 91 LPP от 21.10.02](https://github.com/wvxwxvw/LibPortablePlus/raw/main/Firefox_ESR.91.x.x.x32-64.(21.10.02).7z)  
-[Посмотреть преднастроенные профили](https://github.com/wvxwxvw/LibPortablePlus/tree/main/Profiles_91_ESR_LPP)
+[Посмотреть преднастроенные профили](https://github.com/wvxwxvw/LibPortablePlus_Profiles)
   
 ## Портативная версия Firefox ESR 91.x (32-64)  
   
