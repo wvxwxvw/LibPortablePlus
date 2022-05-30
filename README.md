@@ -1,61 +1,54 @@
 # LibPortablePlus
   
-[Скачать сборку ESR 91 LPP от 21.10.02](https://github.com/wvxwxvw/LibPortablePlus/raw/main/Firefox_ESR.91.x.x.x32-64.(21.10.02).7z)  
-[Посмотреть преднастроенные профили](https://github.com/wvxwxvw/LibPortablePlus_Profiles)
-  
 ## Портативная версия Firefox ESR 91.x (32-64)  
   
 * Условная портативность обеспечивается portable*.dll  
 * Несколько вариантов файлов настроек  
 * Несколько способов очистки следов работы  
 * Метод резервного копирования  
-* Встроен загрузчик скриптов - [user_chrome_files](https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/stylesff/user_chrome_files)    
+* Встроен загрузчик скриптов - <a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/stylesff/user_chrome_files" target="_blank">user_chrome_files</a>  
 * и т.д.  
   
   
 ## Общее описание:  
   
-* В папке будущего профиля присутствует пара заглушек и user.js  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий телеметрию  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновления  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий отчеты  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий GMP, CDM, DRM  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий WebRTC  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий Service workers  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий браузерные проверки  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий сомооткрываемые страницы  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий пункты меню Pocket  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий пункты меню аккаунта Firefox  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включающий userChrome/userContent  
+#### • В папке будущего профиля присутствуют:  
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Пара заглушек:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Нужны для гарантии предотвращения создания мусорных папок  
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;search.json.mozlz4:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Добавляет несколько поисковиков, в том числе забаненные  
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefs.js:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включает поддержку скриптов и выводит на панель кнопку скрипта  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  быстрого переключения параметров about:config  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Преднастраивает отображение поисковиков, изменяется в настройках  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Закрепляет в топах ссылки на две альтернативные новые вкладки  
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user.js:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключает телеметрию, автообновления, отчеты, браузерные проверки,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  сомооткрываемые страницы, GMP, CDM, DRM, WebRTC, Service workers,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  пункты меню Pocket и аккаунта Firefox  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включает возможность использования стилей userChrome/userContent  
+
+#### • В папке ядра присутствует:  
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Файл настроек  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включающий возможность установки неподписанных расширений  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включающий возможность установки скриптов и стилей user_chrome_files  
   
-* В папке ядра присутствует файл настроек  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включающий возможность установки неподписанных расширений  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включающий возможность установки скриптов и стилей user_chrome_files  
+##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Файл политик  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий: телеметрию, CaptivePortal, сервисы Mozilla, GMP, CDM,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  возможность установки обоев, страницы первого запуска, PostUpdatePage,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  создание для нового профиля папок закладок по умолчанию  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление: браузера, расширений, поисковых систем,  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  системных расширений
   
-* В папке ядра присутствует файл политик  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий телеметрию  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий CaptivePortal  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий сервисы Mozilla  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий GMP, CDM  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление браузера  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление расширений  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий проверку браузера по умолчанию  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление поисковых систем  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий автообновление системных расширений  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий возможность установки обоев рабочего стола  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий страницы первого запуска и PostUpdatePage  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий создание для нового профиля папок закладок по умолчанию  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Отключающий страницу политики конфиденциальности при первом запуске  
-  
-* Временные файлы пишутся в %TEMP%  
-* Добавлен скрипт очистки ядра, профиля и временных файлов (ручной запуск)  
-* Ядро браузера почищено от ненужных папок и файлов  
-* Добавлен способ быстрого бэкапа профиля или выбранных папок/файлов  
-* Firefox Accounts, Pocket и Service workers отключены, но легко включаются  
-* Другие компоненты и более подробные описания есть в папке maintenance  
+#### • Временные файлы пишутся в %TEMP%  
+#### • Добавлен скрипт очистки ядра, профиля и временных файлов (ручной запуск)  
+#### • Ядро браузера почищено от ненужных папок и файлов  
+#### • Добавлен способ быстрого бэкапа профиля или выбранных папок/файлов  
+#### • Firefox Accounts, Pocket и Service workers отключены, но легко включаются  
+#### • Другие компоненты и более подробные описания есть в папке maintenance  
   
   
-## Состав сборки:  
+## Корень сборки:  
   
 ```csharp
     Папка maintenance
@@ -104,26 +97,35 @@
 ## Как начать пользоваться:  
   
 ```csharp
-    1. Для создания нового профиля
-        • Запускаем core/firefox.exe или ярлык "Firefox 91esr RUN.lnk"
-        • Пользуемся
+    1. Для создания нового профиля  
+        • Запускаем core/firefox.exe или ярлык "Firefox 91esr RUN.lnk"  
+        • Пользуемся  
       
-    2. Для использования своего старого профиля
-        • Кидаем файлы и папки своего профиля в "profile"
-            · От замены отказываемся, ошибки игнорируем, жмем "Пропустить"
-            · Предварительно можно почитать ниже "Перенос старого профиля"
-        • Запускаем FF91esrCleaner.exe, ждем несколько секунд
-        • Запускаем core/firefox.exe или ярлык "Firefox 91esr RUN.lnk"
-        • Пользуемся
+    2. Для использования своего старого профиля  
+        • Кидаем файлы и папки своего профиля в "profile"  
+            · От замены отказываемся, ошибки игнорируем, жмем "Пропустить"  
+            · Предварительно можно почитать ниже "Перенос старого профиля"  
+        • Запускаем FF91esrCleaner.exe, ждем несколько секунд  
+        • Запускаем core/firefox.exe или ярлык "Firefox 91esr RUN.lnk"  
+        • Пользуемся  
 ```
   
+        !   На боковой панели вы обнаружите синюю кнопку, рекомендую прочесть ее  
+            подсказку, а потом зайти в оба ее меню и сделать все пункты зелеными.  
   
-        !!! Если расширения из старого профиля потеряют настройки, удалите  
-        addonStartup.json.lz4 в профиле и два раза перезапустите браузер  
-        При первом запуске, создается новый кэш загрузки расширений, а при  
-        втором запуске, расширения стартуют уже с новым кэшем. Настройки  
-        расширений при этом восстанавливаются.  
+        !!  Если расширения из старого профиля потеряют настройки, удалите  
+            addonStartup.json.lz4 в профиле и два раза перезапустите браузер  
+            При первом запуске, создается новый кэш загрузки расширений, а при  
+            втором запуске, расширения стартуют уже с новым кэшем. Настройки  
+            расширений при этом восстанавливаются.  
   
+        !!! Желательно сразу установить альтернативу домашней странице,
+            что-то свое или, например, советуемые Mozilla:
+            https://addons.mozilla.org/ru/firefox/addon/tabliss/
+            https://addons.mozilla.org/ru/firefox/addon/new-tab-override/
+            Не вся телеметрия и сетевые соединения домашней страницы по умолчанию
+            отключаются файлами конфигурации, поэтому идеальное решение -
+            не использовать и не открывать ее.
   
 ## Перенос старого профиля  
   
@@ -139,11 +141,12 @@
     · persdict.dat - слова исключения, добавленные вами в словарь
     · places.sqlite - закладки и журнал посещений
     · search.json.mozlz4 - ваши поисковые системы (если меняли), но
-              имейте ввиду что совсем старый файл может быть перезаписан, если в нем
-              отсутствуют поисковые системы Firefox установленные по умолчанию.
+      ваш старый файл может быть перезаписан Firefox, если в нем нет
+      поисковых систем Firefox по умолчанию для этой версии.
 ```
   
-Ни в коем случае не следует тащить в новый профиль старые pref.js и user.js  
+Ни в коем случае не следует тащить в новый профиль старый pref.js,  
+а user.js необходимо тщательно инвентаризировать.  
 Параметры меняются между версиями Firefox и старые настройки могут работать  
 по другому в новой версии.  
   
@@ -178,22 +181,11 @@
 <a href="https://github.com/stonecrusher/simpleMenuWizard" target="_blank">simpleMenuWizard</a>  
 стили userChrome/userContent для редактирования всех контекстных меню  
 Firefox, от автора старого расширения Simple Menu Wizard  
-<a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/webextensions/experiments" target="_blank">add_toolbar_buttons</a>  
-расширение добавляющее кучу полезных кнопок для панелей,  
-от автора user_chrome_files  
-<a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/stylesff/full_theme" target="_blank">full_theme от VitaliyVstyle</a>  
-полная тема в виде набора скриптов и стилей для использования в user_chrome_files,  
-работает поверх стандартных тем оформления - системной, светлой, темной и alpenglow,  
-помимо прочего ликвидирует все недостатки Proton и других "улучшений" Firefox,  
-типа мегабара и невменяемого размера менюшек, легко редактируется  
   
 <a href="https://github.com/black7375/Firefox-UI-Fix" target="_blank">Firefox-UI-Fix</a>  
 несколько комплектов стилей для ликвидации последствий Proton  
 <a href="https://github.com/Aris-t2/CustomCSSforFx" target="_blank">Classic CSS tweaks for Firefox Quantum</a>  
 стили userChrome/userContent, от автора старого ClassicThemeRestorer  
-<a href="https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme" target="_blank">Quantum-Nox-Firefox-Dark-Full-Theme</a>  
-стили userChrome/userContent полной темной темы для Quantum,  
-включая стили для некоторых расширений  
 <a href="https://www.userchrome.org/megabar-styling-firefox-address-bar.html" target="_blank">Megabar – Configuring and Styling</a>  
 генератор стилей для мегабара (адресной строки)  
   
@@ -202,9 +194,6 @@ Firefox, от автора старого расширения Simple Menu Wizar
 для разных версий Firefox (приватность и безапасность)  
 <a href="https://addons.mozilla.org/ru/firefox/addon/enterprise-policy-generator/" target="_blank">Enterprise Policy Generator</a>  
 генератор политик для Firefox  
-  
-<a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/stylesff/user_chrome_files" target="_blank">user_chrome_files</a>  
-дополнительные панели + др. функции и скрипты. Автор <a href="https://forum.mozilla-russia.org/viewforum.php?id=38" target="_blank">здесь</a>  
   
 ## Used developments & credits:  
   
