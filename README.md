@@ -20,6 +20,7 @@
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefs.js:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Включает поддержку скриптов и выводит на панель кнопку скрипта  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  быстрого переключения параметров about:config  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Преднастраивает несколько параметров имеющихся в кнопке
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Преднастраивает отображение поисковиков, изменяется в настройках  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;· Закрепляет в топах ссылки на две альтернативные новые вкладки  
 ##### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user.js:  
