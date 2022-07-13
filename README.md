@@ -2,15 +2,15 @@
   
 [Скачать сборку Firefox_ESR.91.x.x.x32-64.(22.06.27)](https://github.com/wvxwxvw/LibPortablePlus/raw/main/Firefox_ESR.91.x.x.x32-64.(22.06.27).7z)  
 Имеется преднастроенный профиль:  
-[Почитать](https://github.com/wvxwxvw/LibPortablePlus_Profiles/blob/main/README.md) | [Скачать](https://github.com/wvxwxvw/LibPortablePlus_Profiles/raw/main/Firefox.91.ESR.LPP.profile.220627.7z) | [Посмотреть с TST](https://github.com/wvxwxvw/LibPortablePlus_Profiles/blob/main/tstex-screen.md) | [Посмотреть без TST](https://github.com/wvxwxvw/LibPortablePlus_Profiles/blob/main/ntfex-screen.md)  
+[Почитать](https://github.com/wvxwxvw/LibPortablePlus_Profiles/blob/main/README.md) | [Скачать](https://github.com/wvxwxvw/LibPortablePlus_Profiles/raw/main/Firefox.91.ESR.LPP.profile.220714.7z) | [Посмотреть с TST](https://github.com/wvxwxvw/LibPortablePlus_Profiles/blob/main/tstex-screen.md) | [Посмотреть без TST](https://github.com/wvxwxvw/LibPortablePlus_Profiles/blob/main/ntfex-screen.md)  
   
-## Портативная версия Firefox ESR 91.x (32-64)  
+## Портативная версия Firefox ESR (32-64)  
   
 * Условная портативность обеспечивается portable*.dll  
 * Несколько вариантов файлов настроек  
 * Несколько способов очистки следов работы  
 * Метод резервного копирования  
-* Встроен загрузчик скриптов - <a href="https://github.com/VitaliyVstyle/VitaliyVstyle.github.io/tree/master/stylesff/user_chrome_files" target="_blank">user_chrome_files</a>  
+* Встроен загрузчик скриптов - user_chrome_files  
 * и т.д.  
   
   
@@ -53,7 +53,7 @@
 #### • Другие компоненты и более подробные описания есть в папке maintenance  
   
   
-## Корень сборки:  
+## Состав сборки:  
   
 ```csharp
     Папка maintenance
@@ -104,6 +104,7 @@
 ```csharp
     1. Для создания нового профиля  
         • Запускаем core/firefox.exe или ярлык "Firefox 91esr RUN.lnk"  
+        • Перезапускаем браузер  
         • Пользуемся  
       
     2. Для использования своего старого профиля  
@@ -112,6 +113,7 @@
             · Предварительно можно почитать ниже "Перенос старого профиля"  
         • Запускаем FF91esrCleaner.exe, ждем несколько секунд  
         • Запускаем core/firefox.exe или ярлык "Firefox 91esr RUN.lnk"  
+        • Перезапускаем браузер  
         • Пользуемся  
 ```
   
