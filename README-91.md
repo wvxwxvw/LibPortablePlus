@@ -1,5 +1,9 @@
 # LibPortablePlus
   
+[Скачать сборку Firefox_ESR.91.x.x.x32-64.(22.07.12)](https://github.com/wvxwxvw/LibPortablePlus/raw/main/Firefox_ESR.91.x.x.x32-64.(22.07.12).7z)  
+Также имеется преднастроенный профиль:  
+[Почитать](https://github.com/wvxwxvw/LibPortablePlus_Profiles/blob/main/README.md) | [Скачать](https://github.com/wvxwxvw/LibPortablePlus_Profiles/raw/main/Firefox.91.ESR.LPP.profile.220714.7z) | [Посмотреть с TST](https://github.com/wvxwxvw/LibPortablePlus_Profiles/blob/main/tstex-screen.md) | [Посмотреть без TST](https://github.com/wvxwxvw/LibPortablePlus_Profiles/blob/main/ntfex-screen.md)  
+  
 ## Портативная версия Firefox ESR (32-64)  
   
 * Условная портативность обеспечивается portable*.dll  
